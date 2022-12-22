@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(99, 99, 99);
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgb(35, 38, 47);
+    color: rgb(248, 248, 248);
+    height: 500px;
+    width: 300px;
+}
+
+.display {
+    text-align: end;
+    padding-right: 20px;
+    font-size: 3.5em;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 70%;
+}
+
+button {
+    border: 1px solid black;
+    font-size: 1.5em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.delete {
+    background-color: rgb(223, 220, 50);
+}
+
+.delete:hover {
+    background-color: rgb(188, 185, 42);
+}
+
+.digit {
+    background-color: rgb(89, 91, 94);
+    color: white;
+}
+
+.digit:hover {
+    background-color: rgb(99, 101, 105);
+}
+
+.clear-btn,
+.opposite-btn,
+.percent-btn {
+    background-color: rgb(57, 58, 65);
+    color: white;
+}
+
+.clear-btn:hover,
+.opposite-btn:hover,
+.percent-btn:hover {
+    background-color: rgb(69, 70, 79);
+}
+
+.divide-btn,
+.multiply-btn,
+.subtract-btn,
+.sum-btn,
+.equal-btn {
+    background-color: rgb(242, 163, 60);
+    color: white;
+}
+
+.divide-btn:hover,
+.multiply-btn:hover,
+.subtract-btn:hover,
+.sum-btn:hover,
+.equal-btn:hover {
+    background-color: rgb(207, 139, 50);
+}
